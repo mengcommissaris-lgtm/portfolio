@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Gothic A1', sans-serif;
+    background: #e5e5e5; /* gray background */
+    color: #000;
+}
+
+.divider{
+   height: 50px;
+    background: #e5e5e5;
+    width: 100%;
+}
+.page {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+/* HEADER */
+.hero{
+    background:#6C0606;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+.hero h1{
+    font-family:'Goldman', sans-serif;
+    font-size:86px;
+}
+
+.hero p{
+    font-size:36px;
+    font-weight: bolder;
+}
+
+/* VISION */
+.vision{
+    display:flex;
+    gap:40px;
+    width:100%;
+    margin:auto;
+    align-items:flex-start;
+}
+
+.profile{
+    width:250px;
+}
+
+.profile img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    background:#ddd;
+}
+
+.profile h3{
+    margin-top:10px;
+    text-align:center;
+    color:#6C0606;
+}
+
+.text h2{
+    font-family:'Goldman';
+    color:#6C0606;
+    margin-bottom:10px;
+}
+
+.quote{
+        margin: 20px auto 0;
+    width: 70%;
+    padding: 20px;
+    background: rgba(108,6,6,0.2);
+    text-align: center;
+    color: #6C0606;
+    font-weight: bold;
+}
+
+/* IDENTITY */
+.identity{
+    display:flex;
+    gap:40px;
+    width: 100%;
+    margin:60px auto;
+}
+
+.vision-identity-text{
+    flex:1.5;
+}
+
+.vision-identity-text h2{
+    font-family:'Goldman';
+    color:#6C0606;
+    margin-bottom:10px;
+}
+
+.identity-box{
+    flex:0.5;
+    background:#ddd;
+    padding:10px;
+    text-align: center;
+}
+
+.expertise-area img{
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 8px;
+    font-style: italic;
+    color: #666;
+}
+
+/* SECTION TITLE */
+.section-title-first{
+    width:100%;
+    margin-bottom: 20px;
+    padding:12px;
+    background:#6C0606;
+    color:white;
+    text-align:center;
+    font-family:'Goldman';
+    font-size: 36px;
+}
+.section-title{
+    width:100%;
+    margin:50px auto 20px;
+    padding:12px;
+    background:#6C0606;
+    color:white;
+    text-align:center;
+    font-family:'Goldman';
+    font-size: 36px;
+}
+
+/* TEXT */
+.text{
+    width:100%;
+    margin:auto;
+    line-height:1.5;
+}
+
+/* PROJECT GRID */
+.projects-grid{
+    width:100%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+/* PROJECT CARD */
+.project-card{
+    text-decoration:none;
+    color:black;
+}
+
+.project-card img{
+   width: 100%;
+    height: 350px; 
+    object-fit: cover;
+    background: #ddd;
+    display: block;
+}
+
+.project-title{
+    text-align:center;
+    margin-top:10px;
+    font-size:16px;
+    font-weight:700;
+}
+.ai-statement{
+    margin:60px auto 30px;
+    width:100%;
+    text-align:center;
+    color:#555;
+    font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .vision,
+    .identity{
+        flex-direction:column;
+    }
+
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    background: #6C0606;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:14px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+    transition: background 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background: #ffa1a1;
+    transform: translateY(-3px);
+}
